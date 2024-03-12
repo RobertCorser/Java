@@ -26,6 +26,8 @@ public class CANDrivetrain extends SubsystemBase {
   /*Constructor. This method is called when an instance of the class is created. This should generally be used to set up
    * member variables and perform any configuration or set up necessary on hardware.
    */
+  //can 2 is back rear
+  //can
   public CANDrivetrain() {
     CANSparkMax leftFront = new CANSparkMax(kLeftFrontID, MotorType.kBrushed);
     CANSparkMax leftRear = new CANSparkMax(kLeftRearID, MotorType.kBrushed);

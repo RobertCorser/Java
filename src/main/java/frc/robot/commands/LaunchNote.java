@@ -32,8 +32,7 @@ public class LaunchNote extends Command {
   @Override
   public void initialize() {
     // Set the wheels to launching speed
-    m_launcher.setLaunchWheel(kLauncherSpeed);
-    m_launcher.setFeedWheel(kLaunchFeederSpeed);
+
   }
 
   // Called every time the scheduler runs while the command is scheduled.
@@ -42,6 +41,8 @@ public class LaunchNote extends Command {
     // There is nothing we need this command to do on each iteration. You could remove this method
     // and the default blank method
     // of the base class will run.
+    m_launcher.setUpperMotor(kLauncherSpeed);
+    m_launcher.setLowerMotor(kLaunchFeederSpeed);
   }
 
   // Returns true when the command should end.
